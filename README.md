@@ -33,6 +33,8 @@ function createAccount() {
 }
 ```
 
+### A 列に番号(ID)、B列に氏名
+
 ```javascript
 function splitName() {
 
