@@ -1,5 +1,36 @@
 # gas-create-user-and-update-by-chatgpt-ref
 
+ChatGPT にもらったのは以下です。それを使いました。
+```javascript
+function createAccount() {
+  var domain = 'example.com'; // 自分のドメインに変更してください
+  var user = 'testuser'; // 作成するユーザーのユーザー名を指定してください
+  var password = 'testpassword'; // ユーザーのパスワードを指定してください
+  var recoveryEmail = 'recovery@example.com'; // 復旧用のメールアドレスを指定してください
+  var givenName = 'Test'; // ユーザーの名前を指定してください
+  var familyName = 'User'; // ユーザーの姓を指定してください
+
+  var orgUnitPath = '/'; // 組織単位のパスを指定してください。デフォルトはルートになります。
+
+  var userObject = {
+    primaryEmail: user + '@' + domain,
+    password: password,
+    name: {
+      givenName: givenName,
+      familyName: familyName
+    },
+    recoveryEmail: recoveryEmail
+  };
+
+  try {
+    var createdUser = AdminDirectory.Users.insert(userObject);
+    Logger.log('User %s created with email address %s', createdUser.name.fullName, createdUser.primaryEmail);
+  } catch (e) {
+    Logger.log('Error creating user: %s', e);
+  }
+}
+```
+
 ```javascript
 function splitName() {
 
