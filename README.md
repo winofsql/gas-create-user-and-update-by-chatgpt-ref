@@ -95,7 +95,7 @@ function createAccount() {
 
   var user = ''; // 作成するユーザーのユーザー名を指定してください
 
-  var orgUnitPath = '/部署/グループ等'; // 組織単位のパスを指定してください。デフォルトはルートになります。
+  var orgUnitPath = ''; // 組織単位のパスを指定してください。デフォルトはルートになります。
 
   var sheet = SpreadsheetApp.getActiveSheet();
   var targetRange = null;
