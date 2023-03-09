@@ -3,6 +3,8 @@
 ChatGPT にもらったのは以下です。それを使いました。
 ( ChatGPT は orgUnitPath を使うの忘れてましたけど )
 
+![image](https://user-images.githubusercontent.com/1501327/223959847-60fd2950-e74c-44f5-9f8b-25ad03d26195.png)
+
 ```javascript
 function createAccount() {
   var domain = 'example.com'; // 自分のドメインに変更してください
