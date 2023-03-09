@@ -1,6 +1,8 @@
 # gas-create-user-and-update-by-chatgpt-ref
 
 ChatGPT にもらったのは以下です。それを使いました。
+( ChatGPT は orgUnitPath を使うの忘れてましたけど )
+
 ```javascript
 function createAccount() {
   var domain = 'example.com'; // 自分のドメインに変更してください
